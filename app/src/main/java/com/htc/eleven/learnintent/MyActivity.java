@@ -10,6 +10,7 @@ import android.support.annotation.Nullable;
 
 public class MyActivity extends Activity {
 
+    public static final String  ACTION = "com.htc.eleven.learnintent.intent.action.MyActivity";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

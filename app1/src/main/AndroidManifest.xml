@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.htc.eleven.learnintent">
+    package="com.htc.eleven.app1">
 
     <application
         android:allowBackup="true"
@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".SubActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".MyActivity">
-            <intent-filter >
-                <category android:name="android.intent.category.DEFAULT" />
-                <action android:name="com.htc.eleven.learnintent.intent.action.MyActivity"/>
-            </intent-filter>
 
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.htc.eleven.app1.intent.action.SubActivity"/>
+            </intent-filter>
         </activity>
     </application>
 
